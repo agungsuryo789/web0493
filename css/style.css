@@ -9,18 +9,15 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     color: #4CAF50;
-}
-h2{
-    text-align: center;
-    text-transform: uppercase;
-    color: gray;
-    font-family: sans-serif;
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 80px;
 }
 
 p {
     text-indent: 30px;
     text-align: center;
     letter-spacing: 3px;
+    font-family: "Times New Roman", Times, serif;
 }
 
 a {
@@ -30,20 +27,51 @@ a {
 body{
 
 }
-nav{
-  background: none;
-  border: none;
-  position: sticky;
+.navbar {
+    font-family: "Times New Roman", Times, serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:color ;
+    margin-top: -60px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
 
+.navbar li {
+    float: left;
+}
+
+.navbar2 li a {
+    display: block;
+    color: #33373d;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+.navbar2 li a:hover{
+    background-color: gray;
+    transition: 100ms;
+    font-size: 120%;
+
+}
+
+.navtext {
+    background-color: color;
+    opacity: 0.5;
+}
 .main{
     padding: 8px;
 }
 .jumbotron{
-  background-image: url(../img/bg3.jpg);
+  background-image: url(../img/bg2.jpg);
   background-size: cover;
   background-color: white;
-  height: 96%;
+  height: 150%;
 }
 .jumbotron a {
   text-decoration: none;
@@ -83,7 +111,7 @@ button{
   font-size:20px;
   background:linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
   color:white;
-  font-family:cursive;
+  font-family: "Times New Roman", Times, serif;
   box-sizing:border-box;
 }
 body{
@@ -95,3 +123,11 @@ body{
   margin-top:-30px;
   margin-left: -40px;
 }
+.logo{
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (max-width: 600px){
+    ul.navbar li.right, 
+    ul.navbar li {float: none;}
