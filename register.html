@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+    <link herf="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleregister.css">
+
+</head>
+<body>
+      <ul class="navbar">
+          <li style="float:left"><a href="#home"><img class="logo" src="img/logo2.png"></a></li>
+          <div class="navbar2">
+            <li style="float:right"><a class="navtext" href="#about">About</a></li>
+          <li style="float:right"><a class="navtext" href="#news">News</a></li>
+          <li style="float:right"><a class="navtext" href="#contact">Contact</a></li>
+          <li style="float:right"><a class="navtext" href="#home">Home</a></li>
+          </div>
+      </ul>      
+	<h1 class="title">Welcome to our website</h1>
+	<p>To see our content please kindly to register before , it's free</p>
+	<center><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Register</button></center>
+		<div id="id01" class="modal">
+  		<form class="modal-content animate" action="/action_page.php">
+    	<div class="imgcontainer">
+      	<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+	    </div>
+
+	    <div class="container">
+	      <label for="uname"><b>Nama lengkap</b></label>
+	      <input type="text" placeholder="Enter Nama" name="uname" required>
+
+	      <label for="psw"><b>Password</b></label>
+	      <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label for="psw"><b>Confirm Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label for="uname"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="uname"><b>Phone Number</b></label>
+        <input type="text" placeholder="Enter Number" name="hp" required>
+
+        <label for="uname"><b>Gender</b><br></label>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+
+        <label for="uname"><b>Alamat</b></label>
+        <input type="text" placeholder="Enter Address" name="almt" required>
+	        
+	      <button type="submit">Register</button>
+	    </div>
+	    <div class="container" style="background-color:#f1f1f1">
+      	<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    	</div>
+  		</form>
+		  </div>
+
+        <script src="js/script.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/customscript.js"></script>
+        <script>
+          // Get the modal
+          var modal = document.getElementById('id01');
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+        </script>
+</head>
+<body>
+
+</body>
+</html>
