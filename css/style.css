@@ -8,7 +8,7 @@ html,body{
 h1 {
     text-align: center;
     text-transform: uppercase;
-    color: #4CAF50;
+    color: white;
     font-family: "Times New Roman", Times, serif;
     margin-top: 80px;
 }
@@ -25,7 +25,11 @@ a {
     color: #008CBA;
 }
 body{
-
+  background-image: url(../img/bg2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 .navbar {
     font-family: serif;
@@ -66,28 +70,6 @@ body{
 }
 .main{
     padding: 8px;
-}
-.jumbotron{
-  background-image: url(../img/bg2.jpg);
-  background-size: cover;
-  background-color: white;
-  height: 150%;
-}
-.jumbotron a {
-  text-decoration: none;
-  text-align: center;
-}
-.jumbotron h1{
-    text-align: center;
-    color: white;
-    font-family: sans-serif;
-}
-.jumbotron p {
-    text-indent: 30px;
-    text-align: justify;
-    letter-spacing: 3px;
-    color: white;
-    margin: 10px;
 }
 #text{
 display:none;
