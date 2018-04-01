@@ -27,7 +27,7 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:color ;
+    background-color:hsla(0, 100%, 90%, 0.3);
     margin-top: -60px;
     position: -webkit-sticky; /* Safari */
     position: sticky;
