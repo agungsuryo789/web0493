@@ -1,0 +1,56 @@
+body{
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+
+/*ALL*/
+.header{
+  margin: 0 auto;
+  width: 100%; 
+  height: 120px;
+  background: #b9cae5;
+}
+
+.menu{
+  margin: 0 auto;
+  width: 100%; 
+  height: 50px;
+  background: #3b6cba;
+  text-align: center;
+  padding: 15px;
+}
+
+.tabel{
+  margin: 0 auto;
+  width: 100%; 
+  background: #b4c2ca;
+  text-align: center;
+  padding: 15px;
+}
+.tabel p
+{
+  float: left;
+  margin: 0;
+  margin-left: 150px;
+}
+
+
+/*HEADER*/
+.header h1{
+  font-size: 30px;
+  padding: 15px;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.header h1 small{
+  font-size: 15px;
+  font-style: italic;
+  color: #ffffff;
+}
+
+
