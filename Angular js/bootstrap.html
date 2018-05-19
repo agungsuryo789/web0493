@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/stylebootstrap.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+
+  <script type="text/javascript"> 
+    var app = angular.module("MyApp", ["ngRoute"]);
+    app.config(function($routeProvider){
+      $routeProvider.when("/", {templateUrl : "main.htm"})
+    .when("/about", {templateUrl : "about.htm"})
+    .when("/Product", {templateUrl : "product.htm"})
+    .when("/Contact", {templateUrl : "contact.htm"});
+    });
+  </script>
+</head>
+
+<body>
+  <div  ng-app = "MyApp" class="container">
+    <div class="row header">
+      <div class="col-12">
+      <h1><i class="fas fa-dove"></i> Sample Logo</h1>
+      </div>  
+    </div>
+
+    <div class="row menu">
+      <div class="col-12">
+        <a href="#/!">Home</a>::
+        <a href="#!about">About</a>::
+        <a href="#!Product">Product</a>::
+        <a href="#!contact">Contact</a>
+      </div>
+    </div>
+     <ng-view></ng-view>      
+  </div>
+ 
+</body>
+</html>
