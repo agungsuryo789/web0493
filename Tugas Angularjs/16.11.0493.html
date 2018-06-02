@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/stylebootstrap.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+
+  
+  <style>
+    table, th , td {
+      border: 1px solid grey;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+    table tr:nth-child(odd) {
+      background-color: #f1f1f1;
+    }
+    table tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="tablesjs" ng-app="myApp" ng-controller="dataCtrl">
+  	<table>
+    <tr>
+      <td>Name</td>
+      <td>Address</td>
+      <td>Email</td>
+    </tr>
+  		<tr ng-repeat="x in info">
+    	<td>{{ x.first_name}} {{ x.last_name}}</td>
+      <td>{{ x.address}}</td>
+      <td>{{ x.email}}</td>
+  		</tr>
+  	</table>
+  </div>
+ <script type="text/javascript"> 
+    var app = angular.module('myApp', []);
+     app.controller('dataCtrl',function($scope,$http){
+      var url ='http://api.myjson.com/bins/1ecdlq';
+      $http.get(url).then(function(response){
+        $scope.info = response.data.data;});
+  });
+  </script>
+</body>
+</html>
